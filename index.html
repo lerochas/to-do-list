@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
+<!--
+* A tag <head> é usada para configurações apenas, 
+* nela não há conteúdo que será exibido na página
+-->
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Blessed Bytes">
+    <meta name="description" content="Lista de tarefas com HTML, CSS e Java Script">
+    <meta name="keywords" content="tarefas, lista, Blessed Bytes">
     <title>To-Do List App - Blessed Bytes</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
+<!-- A tag <body> contém os elementos que serão exibidos na página-->
 <body>
+    <!-- A tag <div> serve para criar uma divisão, um bloco. 
+        É usada para estruturar e organizar o conteúdo da página -->
     <div class="container">
+        <!-- o atributo class nos permite agrupar elementos e 
+        aplicar estilos ou funcionalidades específicas a eles -->
         <h1 class="title">Blessed Bytes Application</h1>
         <div class="todo-app">
             <h2>To-Do List <img src="images/icon.png"></h2>
@@ -14,9 +26,11 @@
                 <input type="text" id="input-box" placeholder="Adicione uma tarefa">
                 <button onClick="addTask()">Add</button>
             </div>
+            <!-- A tag <ul>, juntamente com a <li> é usada para criar listas no HTML -->
             <ul id="list-container"></ul>
         </div>
     </div>
+    <!-- A tag <script> possibilita a inclusão de script dinamicos na página -->
     <script src="script.js"></script>
 </body>
 </html>
